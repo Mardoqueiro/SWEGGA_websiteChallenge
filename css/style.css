@@ -1,5 +1,95 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* Main Division */
+.container {
+    margin-left: 150px;
+}
+
+/* Sidebar Division */
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+.sidebar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Banner Division */
+.banner {
+    display: inline-block;
+    vertical-align: top;
+}
+.banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Division */
+.nav {
+    display: inline-block;
+    vertical-align: top;
+}
+.nav img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav map {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Division */
+.main {
+    display: inline-block;
+    vertical-align: top;
+}
+.main form {
+    display: inline-block;
+    vertical-align: top;
+}
+.main table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.main caption {
+    text-align: left;
+}
+.main thead {
+    background-color: #b70808;
+}
+.main th {
+    padding: 0.5em;
+    text-align: left;
+}
+.main td {
+    padding: 0.5em;
+    text-align: left;
+}
+.main td a {
+    text-decoration: none;
+}
+.main td select {
+    width: 100%;
+}
+.main tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.main tbody tr:last-child {
+    border-top: 1px solid black;
+}
+.main tbody tr:last-child span {
+    text-align: center;
+}
+.main tbody tr:last-child input[type="button"] {
+    width: 100%;
+}
+
+/* Footer Division */
+.footer {
+    clear: left;
+    margin-top: 0.5em;
+    border-top: 2px solid gray;
+    padding-top: 0.7em;
 }
