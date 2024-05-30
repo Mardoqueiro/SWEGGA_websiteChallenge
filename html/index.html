@@ -1,98 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swegga</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>ORDER</title>
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <img src="swegga.jpg" alt="Swegga" height="350" width="150">
-        </div>
-        <div class="banner">
-            <img src="delivery.gif" alt="Delivery" height="85" width="300">
-        </div>
-        <div class="nav">
-            <img src="links.gif" usemap="#navigationMap" alt="Navigation">
-            <map name="navigationMap">
-                <area shape="rect" coords="10,5,95,35" href="index.html" alt="Home">
-                <area shape="rect" coords="110,5,200,35" href="services.html" alt="Services">
-                <area shape="rect" coords="215,5,315,35" href="products.html" alt="Products">
-                <area shape="rect" coords="320,5,415,35" href="orderStatus.html" alt="Order Status">
-                <area shape="rect" coords="425,5,515,35" href="contactUs.html" alt="Contact Us">
-            </map>
-        </div>
-        <div class="main">
-            <form name="orders">
-                <table>
+<div id="page">
+
+	<div id="main">
+        <div class="page">
+            <div class="sidebar">
+                <img src="https://mardoqueiro.github.io/all_images/swegga/swegga.jpg" alt="Swegga">
+            </div>
+            <div class="banner">
+                <img src="https://mardoqueiro.github.io/all_images/swegga/delivery.gif" alt="Delivery">
+            </div>
+            <div class="nav">
+                <img src="https://mardoqueiro.github.io/all_images/swegga/links.gif" usemap="#navigationMap" alt="Navigation">
+                <map name="navigationMap">
+                    <area shape="rect" coords="10,5,95,35" href="index.html" alt="Home">
+                    <area shape="rect" coords="110,5,200,35" href="services.html" alt="Services">
+                    <area shape="rect" coords="215,5,315,35" href="products.html" alt="Products">
+                    <area shape="rect" coords="320,5,415,35" href="orderStatus.html" alt="Order Status">
+                    <area shape="rect" coords="425,5,515,35" href="contactUs.html" alt="Contact Us">
+                </map>
+            </div>
+            
+            <div class="main">
+                <table class="table">
                     <caption>Product Summary</caption>
                     <thead>
                         <tr>
-                            <th>Product</th>
+                            <th>Description</th>
                             <th>Size</th>
                             <th>Color</th>
                             <th>Price</th>
                             <th>Quantity</th>
+                            <th>Total</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><a href="female.html">Female Ski Jackets</a></td>
                             <td>
-                                <select name="femaleSize">
+                                <select name="size">
                                     <option value="Small">Small</option>
                                     <option value="Medium">Medium</option>
                                     <option value="Large">Large</option>
                                 </select>
                             </td>
                             <td>
-                                <select name="femaleColor">
+                                <select name="color">
                                     <option value="Red">Red</option>
                                     <option value="Pink">Pink</option>
                                     <option value="Black">Black</option>
                                 </select>
                             </td>
                             <td>R150.95</td>
-                            <td><input type="text" name="femaleQuantity"></td>
+                            <td><input type="text" name="quantity"></td>
                         </tr>
                         <tr>
                             <td><a href="male.html">Male Ski Jackets</a></td>
                             <td>
-                                <select name="maleSize">
+                                <select name="size">
                                     <option value="Small">Small</option>
                                     <option value="Medium">Medium</option>
                                     <option value="Large">Large</option>
                                 </select>
                             </td>
                             <td>
-                                <select name="maleColor">
+                                <select name="color">
                                     <option value="Red">Red</option>
                                     <option value="Blue">Blue</option>
                                     <option value="White">White</option>
                                 </select>
                             </td>
                             <td>R180.95</td>
-                            <td><input type="text" name="maleQuantity"></td>
+                            <td><input type="text" name="quantity"></td>
                         </tr>
                         <tr>
                             <td colspan="4">Click to confirm and process your order</td>
-                            <td><input type="button" value="Total Price" onclick="calculateTotal(document.orders)"></td>
+                            <td><input type="button" value="Total Price"></td>
                         </tr>
                     </tbody>
                 </table>
-            </form>
+            </div>
+            <div class="footer">
+                <p>&copy; 2020 Swegga Fashion - MARDOQUEIRO &amp; DIMBU</p>
+            </div>
         </div>
-        <div class="footer">
-            <p>&copy; 2020 Swegga Fashion &ndash; MARDOQUEIRO &amp; DIMBU</p>
-        </div>
-    </div>
-   
+	</div>
+	
+</div>
 
-  
-    
-    <script src="script/code.js"></script>
+<script src="script/code.js"></script>
+
 </body>
 </html>
-
