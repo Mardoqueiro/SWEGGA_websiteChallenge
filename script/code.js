@@ -1,28 +1,14 @@
-<<<<<<<<<<<<<<  ✨ Codeium Command ⭐ >>>>>>>>>>>>>>>>
+const femalePrice = 150.95;
+const malePrice = 180.95;
+
 function calculateTotalPrice() {
-    var femaleTable = document.getElementById("femaleTable");
-    var maleTable = document.getElementById("maleTable");
-    var orderTable = document.getElementById("orderTable");
-    var femaleTotal = 0;
-    var maleTotal = 0;
-    var orderTotal = 0;
+    const femaleQuantity = parseFloat(document.getElementsByName('quantity')[0].value) || 0;
+    const maleQuantity = parseFloat(document.getElementsByName('quantity')[1].value) || 0;
+    const femaleTotalPrice = femaleQuantity * femalePrice;
+    const maleTotalPrice = maleQuantity * malePrice;
+    const totalPrice = femaleTotalPrice + maleTotalPrice;
 
-    for (var i = 1; i < femaleTable.rows.length; i++) {
-        var quantity = parseInt(femaleTable.rows[i].cells[4].getElementsByTagName("input")[0].value);
-        var price = parseFloat(femaleTable.rows[i].cells[3].innerHTML.slice(1));
-        femaleTotal += quantity * price;
-    }
-
-    for (var i = 1; i < maleTable.rows.length; i++) {
-        var quantity = parseInt(maleTable.rows[i].cells[4].getElementsByTagName("input")[0].value);
-        var price = parseFloat(maleTable.rows[i].cells[3].innerHTML.slice(1));
-        maleTotal += quantity * price;
-    }
-
-    orderTotal = femaleTotal + maleTotal;
-
-    document.getElementById("femaleTotal").innerHTML = "Total: R" + femaleTotal.toFixed(2);
-    document.getElementById("maleTotal").innerHTML = "Total: R" + maleTotal.toFixed(2);
-    document.getElementById("orderTotal").innerHTML = "Total: R" + orderTotal.toFixed(2);
+    document.getElementById('femaleTotal').textContent = femaleTotalPrice.toFixed(2);
+    document.getElementById('maleTotal').textContent = maleTotalPrice.toFixed(2);
+    document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
 }
-<<<<<<<  eb96f859-66c6-4b52-be56-3df44203bf1a  >>>>>>>
